@@ -1,0 +1,2 @@
+opérateurs et expréssions -> https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators
+Hello World -> https://fr.javascript.info/hello-world

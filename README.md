@@ -85,6 +85,7 @@ const developper = {
 };
 
 ```
+## :computer: Languages
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NoualAli&theme=blue-green"/>
 
 Made with :heart: by <a href="https://github.com/NoualAli" target="_blank">NLDev</a>

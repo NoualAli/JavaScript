@@ -29,11 +29,11 @@
 
 <!-- Status -->
 
-<!-- <h4 align="center"> 
+ <h4 align="center">
 	🚧  JavaScriptLearning 🚀 Under construction...  🚧
 </h4> 
 
-<hr> -->
+<hr>
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -59,14 +59,14 @@ This project is a set of exercises to train and improve your skills which takes 
 
 ```bash
 # Clone this project
-$ git clone https://github.com/NoualALi/javascriptlearning
+$ git clone https://github.com/NoualALi/JavaScriptLearning
 
 # Access
-$ cd javascriptlearning
+$ cd JavaScriptLearning
 
 
 ```
-<b>Enjoy</b> :heart:
+## Enjoy :heart:
 
 ## :man: About me
 ``` javascript

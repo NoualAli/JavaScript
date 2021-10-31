@@ -14,13 +14,13 @@ if(age >= 18){
 
 let age = prompt("Your age")
 
+// && => AND
+// both conditions must be true
 if (age >= 18 && age <= 25) {
     console.log('Welcome to the party !')
+} else if (age > 25) {
+    console.log("Sorry :/ you can't access the party")
 } else {
-    if (age > 25) {
-        console.log("Sorry :/ you can't access the party")
-    } else {
-        age = 18 - age
-        console.log("Sorry :/ you can't access the party, come back in " + age + " years")
-    }
+    age = 18 - age
+    console.log("Sorry :/ you can't access the party, come back in " + age + " years")
 }

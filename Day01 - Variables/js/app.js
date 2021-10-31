@@ -1,5 +1,5 @@
 // affichage dans le nvaigateur web
-document.title = 'Day 00'
+document.title = 'Day 01 - Variables'
 let mainTitle = document.querySelector('#main-title').textContent = "Hello World !";
 let variablesTitle = document.querySelector('#variables').textContent = "Variables"
 // ['JS', 'HTML', 'PHP', 'CSS', 'SQL'].forEach(alert)

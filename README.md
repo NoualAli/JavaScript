@@ -16,7 +16,7 @@
   <img alt="Github stars" src="https://img.shields.io/github/stars/NoualAli/JavaScriptLeraning?color=56BEB8" />
   <img alt="Github size" src="https://img.shields.io/github/repo-size/NoualAli/JavaScriptLeraning?color=56BEB8" />
 
-  <div align="center" style="display:flex, justify-content:center, flex-direction:row">
+  <div align="center" style="display:flex, justify-content:center">
     <img src="https://github-readme-stats.vercel.app/api?username=NoualAli&show_icons=true"/>
   </div>
   
@@ -66,7 +66,7 @@ $ cd JavaScriptLearning
 
 
 ```
-## Enjoy :heart:
+**Enjoy** :heart:
 
 ## :man: About me
 ``` javascript

@@ -28,7 +28,7 @@ function reset($state) {
 }
 
 function increment($state, $btn) {
-    const increment = $btn.dataset.increment
+    const increment = $btn.hasAttribute('data-increment') ? $btn.dataset.increment : 1
     let content = $state.textContent
     content = parseInt(content) + parseInt(increment)
     $state.textContent = content
@@ -42,8 +42,8 @@ function decrement($state, $btn) {
 }
 
 function start($state, $btn) {
-    interval = setInterval(() => {
-        increment($state)
+    startInterval = setInterval(() => {
+        increment($state, $btn)
     }, 1000)
     $startBtn = $btn.parentElement.querySelector('button[data-operation="stop"]')
     $startBtn.disabled = false

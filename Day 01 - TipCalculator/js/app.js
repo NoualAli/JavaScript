@@ -9,7 +9,7 @@
  * Variables that contains $ sign at start are HTML elements
  */
 
-const tipPercent = 5
+const tipPercent = 8.5
 
 /**
  * HTML Elements

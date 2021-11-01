@@ -19,14 +19,37 @@ $counters.forEach($counter => {
     })
 })
 
+
+/**
+ * Set default start value
+ * 
+ * @param {HTMLElement} $counterState
+ * 
+ * @return {void}
+ */
 function setDefaultValue($counterState) {
     $counterState.textContent = $counterState.dataset.start
 }
 
+/**
+ * Reset default counter value
+ * 
+ * @param {HTMLElement} $state
+ * 
+ * @return {void}
+ */
 function reset($state) {
     setDefaultValue($state)
 }
 
+/**
+ * Increment counter value
+ * 
+ * @param {HTMLElement} $state
+ * @param {HTMLButtonElement} $btn
+ * 
+ * @return {void}
+ */
 function increment($state, $btn) {
     const increment = $btn.hasAttribute('data-increment') ? $btn.dataset.increment : 1
     let content = $state.textContent
@@ -34,6 +57,14 @@ function increment($state, $btn) {
     $state.textContent = content
 }
 
+/**
+ * Decrement counter value
+ * 
+ * @param {HTMLElement} $state
+ * @param {HTMLButtonElement} $btn
+ * 
+ * @return {void}
+ */
 function decrement($state, $btn) {
     const decrement = $btn.dataset.decrement
     let content = $state.textContent
@@ -41,6 +72,14 @@ function decrement($state, $btn) {
     $state.textContent = content
 }
 
+/**
+ * Start counter
+ * 
+ * @param {HTMLElement} $state
+ * @param {HTMLButtonElement} $btn
+ * 
+ * @return {void}
+ */
 function start($state, $btn) {
     startInterval = setInterval(() => {
         increment($state, $btn)
@@ -52,6 +91,14 @@ function start($state, $btn) {
 
 }
 
+/**
+ * Stop counter
+ * 
+ * @param {HTMLElement} $state
+ * @param {HTMLButtonElement} $btn
+ * 
+ * @return {void}
+ */
 function stop($state, $btn) {
     $startBtn = $btn.parentElement.querySelector('button[data-operation="start"]')
     $startBtn.disabled = false

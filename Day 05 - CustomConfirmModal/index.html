@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/b3b178745d.js" crossorigin="anonymous"></script>
+    <title>Day 05 - Custom Confirm Modal</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Day 05 - Custom Confirm Modal</h1>
+        <a data-url="mailto:noualdev@gmail.com" class="alert-button danger click-me" data-source="gmail" data-operation="confirmation"><i class="fab fa-google"></i></a>
+        <a data-url="https://www.linkedin.com/in/ali-noual/" class="alert-button primary click-me" data-source="linkedin" data-operation="confirmation"><i class="fab fa-linkedin"></i></a>
+        <a data-url="https://www.instagram.com/_ro__yal/" class="alert-button danger click-me" data-source="instagram" data-operation="confirmation"><i class="fab fa-instagram"></i></a>
+        <a data-url="https://github.com/NoualAli" class="alert-button dark click-me" data-source="github" data-operation="confirmation"><i class="fab fa-github"></i></a>
+
+        <div class="alert-container">
+            <div class="alert">
+                <div class="alert-header">
+                    <h2 class="alert-header-title">Confirm</h2>
+                    <button class="close-button alert-button danger" data-operation="close">
+                        <div class="close"></div>
+                    </button>
+                </div>
+                
+                <div class="alert-content">
+                    <h1>Hello world !</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, architecto, iusto non unde distinctio consectetur totam quam, animi ad ullam possimus id minus cupiditate necessitatibus! Quo quia quasi eveniet placeat.
+                        Dicta sit modi error praesentium optio vero fugit nihil minus ab cumque nobis nemo, iure consectetur illo et pariatur, expedita, incidunt laudantium omnis. Praesentium quisquam aperiam ipsam blanditiis debitis officiis!
+                        Dicta voluptatem harum praesentium illum. Quaerat, doloremque velit. Sit vitae excepturi, ipsum, natus libero aut ut nesciunt nulla deleniti maxime ea voluptates. Autem quibusdam architecto dolore sunt non laborum recusandae.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, architecto, iusto non unde distinctio consectetur totam quam, animi ad ullam possimus id minus cupiditate necessitatibus! Quo quia quasi eveniet placeat.
+                        Dicta sit modi error praesentium optio vero fugit nihil minus ab cumque nobis nemo, iure consectetur illo et pariatur, expedita, incidunt laudantium omnis. Praesentium quisquam aperiam ipsam blanditiis debitis officiis!
+                        Dicta voluptatem harum praesentium illum. Quaerat, doloremque velit. Sit vitae excepturi, ipsum, natus libero aut ut nesciunt nulla deleniti maxime ea voluptates. Autem quibusdam architecto dolore sunt non laborum recusandae.
+                    </p>
+                </div>
+                
+                <div class="alert-footer">
+                    <a class="alert-button primary" data-operation="close">Cancel</a>
+                    <a class="alert-button success" data-operation="accept">Yes</a>
+                    <a class="alert-button danger" data-operation="close">No</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

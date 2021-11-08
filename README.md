@@ -4,8 +4,6 @@
   &#xa0;
 </div>
 
-<h1 align="center">#100DaysOfCode</h1>
-
 <p align="center">
 
   <img alt="Github stars" src="https://img.shields.io/badge/license-MIT-red" />

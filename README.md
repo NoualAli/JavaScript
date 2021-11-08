@@ -14,19 +14,7 @@
   <div align="center" style="display:flex, justify-content:center">
     <img src="https://github-readme-stats.vercel.app/api?username=NoualAli&show_icons=true"/>
   </div>
-  
-
-
-
-
-
 </p>
-
-<!-- Status -->
-
- <h4 align="center">
-	🚧  JavaScriptLearning 🚀 Under construction...  🚧
-</h4> 
 
 <hr>
 

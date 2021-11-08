@@ -9,9 +9,6 @@
   <img alt="Github stars" src="https://img.shields.io/badge/license-MIT-red" />
   <img alt="Github profile views" src="https://komarev.com/ghpvc/?username=NoualAli"/>
   <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https://github.com/NoualAli/JavaScriptLeraning"/>
-  <img alt="Github issues" src="https://img.shields.io/github/issues/NoualAli/JavaScriptLeraning?color=56BEB8" />
-  <img alt="Github forks" src="https://img.shields.io/github/forks/NoualAli/JavaScriptLeraning?color=56BEB8" />
-  <img alt="Github stars" src="https://img.shields.io/github/stars/NoualAli/JavaScriptLeraning?color=56BEB8" />
   <img alt="Github size" src="https://img.shields.io/github/repo-size/NoualAli/JavaScriptLeraning?color=56BEB8" />
 
   <div align="center" style="display:flex, justify-content:center">

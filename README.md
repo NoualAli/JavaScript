@@ -8,8 +8,8 @@
 
   <img alt="Github stars" src="https://img.shields.io/badge/license-MIT-red" />
   <img alt="Github profile views" src="https://komarev.com/ghpvc/?username=NoualAli"/>
-  <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https://github.com/NoualAli/JavaScriptLeraning"/>
-  <img alt="Github size" src="https://img.shields.io/github/repo-size/NoualAli/JavaScriptLeraning?color=56BEB8" />
+  <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https://github.com/NoualAli/JavaScript"/>
+  <img alt="Github size" src="https://img.shields.io/github/repo-size/NoualAli/JavaScript?color=56BEB8" />
 
   <div align="center" style="display:flex, justify-content:center">
     <img src="https://github-readme-stats.vercel.app/api?username=NoualAli&show_icons=true"/>

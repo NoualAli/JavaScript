@@ -63,7 +63,7 @@ const developper = {
         },
         databases: ["MySql", "SqlServer", "sqlite"],
     },
-    OSLoved: 'Ubuntu Bionic 18.04',
+    heartOs: 'Ubuntu Bionic 18.04',
     currentFocus: "JavaScript"
 };
 

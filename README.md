@@ -4,34 +4,17 @@
   &#xa0;
 </div>
 
-<h1 align="center">#100DaysOfCode</h1>
-
 <p align="center">
 
   <img alt="Github stars" src="https://img.shields.io/badge/license-MIT-red" />
   <img alt="Github profile views" src="https://komarev.com/ghpvc/?username=NoualAli"/>
-  <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https://github.com/NoualAli/JavaScriptLeraning"/>
-  <img alt="Github issues" src="https://img.shields.io/github/issues/NoualAli/JavaScriptLeraning?color=56BEB8" />
-  <img alt="Github forks" src="https://img.shields.io/github/forks/NoualAli/JavaScriptLeraning?color=56BEB8" />
-  <img alt="Github stars" src="https://img.shields.io/github/stars/NoualAli/JavaScriptLeraning?color=56BEB8" />
-  <img alt="Github size" src="https://img.shields.io/github/repo-size/NoualAli/JavaScriptLeraning?color=56BEB8" />
+  <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https://github.com/NoualAli/JavaScript"/>
+  <img alt="Github size" src="https://img.shields.io/github/repo-size/NoualAli/JavaScript?color=56BEB8" />
 
   <div align="center" style="display:flex, justify-content:center">
     <img src="https://github-readme-stats.vercel.app/api?username=NoualAli&show_icons=true"/>
   </div>
-  
-
-
-
-
-
 </p>
-
-<!-- Status -->
-
- <h4 align="center">
-	🚧  JavaScriptLearning 🚀 Under construction...  🚧
-</h4> 
 
 <hr>
 
@@ -85,9 +68,6 @@ const developper = {
 };
 
 ```
-## :computer: Languages
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NoualAli&theme=blue-green"/>
-
 Made with :heart: by <a href="https://github.com/NoualAli" target="_blank">NLDev</a>
 
 ## :memo: License ##

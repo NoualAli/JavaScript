@@ -1,0 +1,348 @@
+:root {
+    --main-ff: 'Open Sans', 'Arial', sans-serif;
+    --primary: rgba(9, 132, 227, 1.0);
+    --primaryLight: rgba(9, 132, 227, .3);
+    --warning: rgba(241, 196, 15, 1.0);
+    --warningLight: rgba(241, 196, 15, .3);
+    --success: rgba(39, 174, 96, 1.0);
+    --successLight: rgba(39, 174, 96, .3);
+    --danger: rgba(214, 48, 49, 1.0);
+    --dangerLight: rgba(214, 48, 49, .3);
+    --lightGrey: #ddd;
+    --darkGrey: #333;
+    --white: #fcfcfc;
+    --shadow: 0px 3px 16px rgba(0, 0, 0, .1);
+    --shadowDark: 0px 3px 16px rgba(0, 0, 0, .5);
+    --spacer: 1rem;
+}
+
+/*
+    Headers
+*/
+body{
+    background-color: var(--white);
+}
+h1, h2, h3, h4, h5, h6{
+    margin: var(--spacer) 0;
+}
+
+/*
+    Containers
+*/
+.container {
+    position: relative;
+    margin: 40px auto;
+    min-height: 200px;
+    height: auto;
+    width: 90%;
+    padding: var(--spacer);
+}
+
+/*
+    Backgrounds
+*/
+
+.bg-primary {
+    background-color: var(--primary) !important;
+    color: var(--white);
+}
+
+.bg-danger {
+    background-color: var(--danger) !important;
+    color: var(--white);
+}
+
+.bg-warning {
+    background-color: var(--warning) !important;
+}
+
+.bg-success {
+    background-color: var(--success) !important;
+    color: var(--white);
+}
+
+/*
+    Text
+*/
+
+.text-white{
+    color: var(--white);
+}
+
+.text-dark{
+    color: var(--darkGrey);
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-danger {
+    color: var(--danger) !important;
+}
+
+.text-warning {
+    color: var(--warning) !important;
+}
+
+.text-success {
+    color: var(--success) !important;
+}
+
+/*
+    Box shadow
+*/
+
+.box-shadow {
+    box-shadow: var(--shadow);
+}
+
+.box-shadow-dark{
+    box-shadow: var(--shadowDark);
+}
+
+/*
+    Border radius
+*/
+
+.border-radius{
+    border-radius: 5px;
+}
+
+.border-radius-half{
+    border-radius: 50%;
+}
+
+.border-radius-full{
+    border-radius: 100%;
+}
+
+/*
+    Separator
+*/
+hr{
+    color: #ddd;
+    margin: var(--spacer) 0;
+}
+
+/*
+    Notifications
+*/
+
+.notification{
+    color: var(--darkGrey);
+    border: 1px solid var(--darkGrey);
+    background-color: var(--white);
+    margin: var(--spacer);
+    padding: var(--spacer);
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    text-shadow: var(--shadow);
+}
+
+.notification.dark{
+    color: var(--white);
+    border: 1px solid var(--darkGrey);
+    background-color: var(--darkGrey);
+}
+
+.notification.primary{
+    color: var(--white);
+    border: 1px solid var(--primaryLight);
+    background-color: var(--primary);
+}
+
+.notification.primary.light{
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    background-color: var(--primaryLight);
+}
+
+.notification.danger{
+    color: var(--white);
+    border: 1px solid var(--dangerLight);
+    background-color: var(--danger);
+}
+
+.notification.danger.light{
+    color: var(--danger);
+    border: 1px solid var(--danger);
+    background-color: var(--dangerLight);
+}
+
+.notification.warning{
+    color: var(--darkGrey);
+    border: 1px solid var(--warningLight);
+    background-color: var(--warning);
+}
+
+.notification.warning.light{
+    color: var(--warning);
+    border: 1px solid var(--warning);
+    background-color: var(--warningLight);
+}
+
+.notification.success{
+    color: var(--white);
+    border: 1px solid var(--successLight);
+    background-color: var(--success);
+}
+
+.notification.success.light{
+    color: var(--success);
+    border: 1px solid var(--success);
+    background-color: var(--successLight);
+}
+/*
+    Buttons
+*/
+.button{
+    margin: 5px 0;
+    padding: 10px 15px;
+    background-color: var(--white);
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--darkGrey);
+    cursor: pointer;
+    transition: .1s;
+}
+
+.button.small{
+    padding: 5px 10px;
+}
+
+.button.large{
+    padding: 15px 20px;
+}
+
+
+.button.dark{
+    color: var(--white);
+    border: 1px solid var(--darkGrey);
+    background-color: var(--darkGrey);
+}
+
+.button.primary{
+    color: var(--white);
+    border: 1px solid var(--primaryLight);
+    background-color: var(--primary);
+}
+
+.button.primary.light{
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    background-color: var(--primaryLight);
+}
+
+.button.danger{
+    color: var(--white);
+    border: 1px solid var(--dangerLight);
+    background-color: var(--danger);
+}
+
+.button.danger.light{
+    color: var(--danger);
+    border: 1px solid var(--danger);
+    background-color: var(--dangerLight);
+}
+
+.button.warning{
+    color: var(--darkGrey);
+    border: 1px solid var(--warningLight);
+    background-color: var(--warning);
+}
+
+.button.warning.light{
+    color: var(--warning);
+    border: 1px solid var(--warning);
+    background-color: var(--warningLight);
+}
+
+.button.success{
+    color: var(--white);
+    border: 1px solid var(--successLight);
+    background-color: var(--success);
+}
+
+.button.success.light{
+    color: var(--success);
+    border: 1px solid var(--success);
+    background-color: var(--successLight);
+}
+
+.button.dark:hover{
+    color: var(--darkGrey);
+    border: 1px solid var(--darkGrey);
+    background-color: var(--lightGrey);
+}
+
+.button.primary:hover{
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    background-color: var(--primaryLight);
+}
+
+.button.primary.light:hover{
+    color: var(--white);
+    border: 1px solid var(--primaryLight);
+    background-color: var(--primary);
+}
+
+.button.danger:hover{
+    color: var(--danger);
+    border: 1px solid var(--danger);
+    background-color: var(--dangerLight);
+}
+
+.button.danger.light:hover{
+    color: var(--white);
+    border: 1px solid var(--dangerLight);
+    background-color: var(--danger);
+}
+
+.button.warning:hover{
+    color: var(--warning);
+    border: 1px solid var(--warning);
+    background-color: var(--warningLight);
+}
+
+.button.warning.light:hover{
+    color: var(--darkGrey);
+    border: 1px solid var(--warningLight);
+    background-color: var(--warning);
+}
+
+.button.success:hover{
+    color: var(--success);
+    border: 1px solid var(--success);
+    background-color: var(--successLight);
+}
+
+.button.success.light:hover{
+    color: var(--white);
+    border: 1px solid var(--successLight);
+    background-color: var(--success);
+}
+
+/*
+    Helpers
+*/
+/*
+    Text
+*/
+.txt-center{
+    text-align: center;
+}
+
+.txt-right{
+    text-align: right;
+}
+
+.txt-left{
+    text-align: left;
+}
+
+.txt-justify{
+    text-align: justify;
+}

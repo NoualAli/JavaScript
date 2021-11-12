@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,32 +12,33 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Units Converter</title>
 </head>
+
 <body>
     <div class="container">
         <h1 class="txt-center">Units Converter</h1>
         <div class="tabs-container">
             <ul class="tabs">
-                <li><a data-target="#length-converter">Length</a></li>
+                <li><a data-target="#length-converter" class="active">Length</a></li>
             </ul>
             <div class="tabs-view">
-                <form class="tab-content active" id="length-converter" method="POST">
+                <form class="tab-content unit-converter active" id="length-converter" data-converter="length" method="POST">
                     <h2>Length converter</h2>
                     <div class="form-row">
                         <div class="form-control">
                             <label for="kilometer">Kilometer</label>
-                            <input type="number" class="input" id="kilometer" data-unit="kilometer">
+                            <input type="number" class="input unit-input" id="kilometer" data-unit="kilometer">
                         </div>
                         <div class="form-control">
                             <label for="meter">Meter</label>
-                            <input type="number" class="input" id="meter" data-unit="meter">
+                            <input type="number" class="input unit-input" id="meter" data-unit="meter">
                         </div>
                         <div class="form-control">
                             <label for="centimeter">Centimeter</label>
-                            <input type="number" class="input" id="centimeter" data-unit="centimeter">
+                            <input type="number" class="input unit-input" id="centimeter" data-unit="centimeter">
                         </div>
                         <div class="form-control">
                             <label for="milimeter">Milimeter</label>
-                            <input type="number" class="input" id="milimeter" data-unit="milimeter">
+                            <input type="number" class="input unit-input" id="milimeter" data-unit="milimeter">
                         </div>
                     </div>
                     <input type="reset" class="button primary" value="Reset">
@@ -47,4 +49,5 @@
     <script src="../TabsSystem/js/app.js"></script>
     <script src="./js/app.js"></script>
 </body>
+
 </html>

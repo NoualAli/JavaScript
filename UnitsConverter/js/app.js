@@ -1,12 +1,29 @@
-const lengthConverter = document.querySelector('#length-converter')
-const lengthInputs = lengthConverter.querySelectorAll('input')
+const unitConverters = document.querySelectorAll('.unit-converter')
+const inputElts = document.querySelectorAll('.unit-input')
+if (unitConverters.length) {
+    unitConverters.forEach(unitConverter => {
+        const converter = getConverterFuncName(unitConverter.dataset.converter)
+        inputElts.forEach(input => {
+            input.addEventListener('input', e => {
+                window[converter](e)
+            })
+        })
 
-lengthInputs.forEach(input => {
-    input.addEventListener('input', e => {
-        calculateLength(e)
     })
-})
+}
 
+function getConverterFuncName(converter) {
+    return "calculate" + converter.charAt(0).toUpperCase() + converter.slice(1)
+}
+
+
+/**
+ * Length Calculator
+ * 
+ * @param {Event} e
+ * 
+ * @return void
+ */
 function calculateLength(e) {
     const unit = e.target.dataset.unit
     const value = e.target.value
@@ -38,8 +55,16 @@ function calculateLength(e) {
 }
 
 
+/**
+ * Convert to kilometer
+ * 
+ * @param {String} unit
+ * @param {Number} value
+ * 
+ * @return void
+ */
 function toKilometer(unit, value) {
-    const kmInput = Array.from(lengthInputs).filter((e) => e.dataset.unit == 'kilometer')[0]
+    const kmInput = Array.from(inputElts).filter((e) => e.dataset.unit == 'kilometer')[0]
 
     if (unit == 'meter') {
         kmInput.value = value / 1000
@@ -50,8 +75,16 @@ function toKilometer(unit, value) {
     }
 }
 
+/**
+ * Convert to Meter
+ * 
+ * @param {String} unit
+ * @param {Number} value
+ * 
+ * @return void
+ */
 function toMeter(unit, value) {
-    const mInput = Array.from(lengthInputs).filter((e) => e.dataset.unit == 'meter')[0]
+    const mInput = Array.from(inputElts).filter((e) => e.dataset.unit == 'meter')[0]
     if (unit == 'kilometer') {
         mInput.value = value * 1000
     } else if (unit == 'centimeter') {
@@ -61,8 +94,16 @@ function toMeter(unit, value) {
     }
 }
 
+/**
+ * Convert to Centimeter
+ * 
+ * @param {String} unit
+ * @param {Number} value
+ * 
+ * @return void
+ */
 function toCentimerer(unit, value) {
-    const cmInput = Array.from(lengthInputs).filter((e) => e.dataset.unit == 'centimeter')[0]
+    const cmInput = Array.from(inputElts).filter((e) => e.dataset.unit == 'centimeter')[0]
 
     if (unit == 'kilometer') {
         cmInput.value = value * 100000
@@ -73,8 +114,16 @@ function toCentimerer(unit, value) {
     }
 }
 
+/**
+ * Convert to Milimeter
+ * 
+ * @param {String} unit
+ * @param {Number} value
+ * 
+ * @return void
+ */
 function toMilimeter(unit, value) {
-    const mmInput = Array.from(lengthInputs).filter((e) => e.dataset.unit == 'milimeter')[0]
+    const mmInput = Array.from(inputElts).filter((e) => e.dataset.unit == 'milimeter')[0]
     if (unit == 'kilometer') {
         mmInput.value = value * 100000
     } else if (unit == 'meter') {

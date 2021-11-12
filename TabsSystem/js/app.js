@@ -23,7 +23,6 @@ if(tabWrappers.length){
  * @return void
  */
 function openTab(e){
-    console.log(e)
     const target = document.querySelector(e.target.dataset.target)
     e.target.classList.add('active')
     target.classList.add('active')

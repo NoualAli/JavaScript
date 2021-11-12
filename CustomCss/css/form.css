@@ -1,0 +1,39 @@
+.form-row{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 5px;
+}
+
+.form-control > *{
+    margin: 5px 0;
+}
+
+label{
+    font-weight: bold;
+}
+
+.input{
+    display: block;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+    border: 1px solid var(--lightGrey);
+    transition: .3s ease-in-out;
+}
+
+.input:focus{
+    border: 1px solid var(--primaryLight);
+    box-shadow: 0 3px 16px var(--primaryLight);
+}

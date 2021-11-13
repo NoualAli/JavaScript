@@ -12,6 +12,13 @@ if (unitConverters.length) {
     })
 }
 
+/**
+ * Format converter name from form converter dataset
+ * 
+ * @param {HTMLFormElement} converter
+ * 
+ * @return string
+ */
 function getConverterFuncName(converter) {
     return "calculate" + converter.charAt(0).toUpperCase() + converter.slice(1)
 }

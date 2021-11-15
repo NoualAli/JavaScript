@@ -1,5 +1,215 @@
-#digital-clock *{
+:root {
+    --clockBackground: rgba(0, 0, 0, .8);
+}
+
+* {
+    color: var(--white);
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+.clocks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color: var(--primary);
+    height: 100vh;
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#analog-clock *,
+#digital-clock * {
     font-family: Orbitron, Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 2.5rem;
+}
+
+#digital-clock * {
+    font-size: 4.5rem;
+}
+
+#digital-clock {
+    background-color: var(--clockBackground);
+    height: 150px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#analog-clock {
+    position: relative;
+    height: 450px;
+    width: 450px;
+    background-color: var(--clockBackground);
+    font-size: 2rem;
+    border-radius: 50%;
+    color: var(--white);
+    border: 2px solid var(--danger);
+}
+
+#analog-clock h2 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-family: 'Grand Hotel';
+}
+
+.number {
+    --rotate: 0deg;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: rotate(var(--rotate));
+}
+
+.number1 {
+    --rotate: 30deg
+}
+
+.number2 {
+    --rotate: 60deg
+}
+
+.number3 {
+    --rotate: 90deg
+}
+
+.number4 {
+    --rotate: 120deg
+}
+
+.number5 {
+    --rotate: 150deg
+}
+
+.number6 {
+    --rotate: 180deg
+}
+
+.number7 {
+    --rotate: 210deg
+}
+
+.number8 {
+    --rotate: 240deg
+}
+
+.number9 {
+    --rotate: 270deg
+}
+
+.number10 {
+    --rotate: 300deg
+}
+
+.number11 {
+    --rotate: 330deg
+}
+
+.number p {
+    --rotate: 0deg;
+    width: 100%;
+    padding: 10px;
+    transform: rotate(var(--rotate));
+}
+
+.number1>p {
+    --rotate: -30deg
+}
+
+.number2>p {
+    --rotate: -60deg
+}
+
+.number3>p {
+    --rotate: -90deg
+}
+
+.number4>p {
+    --rotate: -120deg
+}
+
+.number5>p {
+    --rotate: -150deg
+}
+
+.number6>p {
+    --rotate: -180deg
+}
+
+.number7>p {
+    --rotate: -210deg
+}
+
+.number8>p {
+    --rotate: -240deg
+}
+
+.number9>p {
+    --rotate: -270deg
+}
+
+.number10>p {
+    --rotate: -300deg
+}
+
+.number11>p {
+    --rotate: -330deg
+}
+
+#analog-clock::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: var(--danger);
+    border-radius: 50%;
+    z-index: 11;
+}
+
+#analog-clock .hand {
+    --rotate: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: translateX(-50%) rotate(calc(var(--rotate) * 1deg));
+    z-index: 10;
+}
+
+#analog-clock .hand.hour {
+    height: 35%;
+    width: 10px;
+    background-color: var(--white);
+}
+
+#analog-clock .hand.second {
+    height: 45%;
+    width: 3px;
+    background-color: var(--danger);
+}
+
+#analog-clock .hand.minute {
+    height: 40%;
+    width: 7px;
+    background-color: var(--white);
 }

@@ -348,6 +348,9 @@ hr{
     text-align: justify;
 }
 
+.text-shadow{
+    text-shadow: var(--shadow);
+}
 /*
     Link
 */

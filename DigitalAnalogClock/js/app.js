@@ -27,7 +27,7 @@ function digitalClock() {
 /**
  * Update clock
  * 
- * @param {HTMLParagraphElement} elt
+ * @param {HTMLSpanElement} elt
  * @param {String} currentTime
  * 
  * @return {void}

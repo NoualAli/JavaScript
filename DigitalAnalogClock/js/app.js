@@ -19,19 +19,25 @@ function digitalClock() {
     const minutesElt = digitalClock.querySelector('#minutes')
     const secondsElt = digitalClock.querySelector('#seconds')
 
+    updateText(hoursElt, currentTime().hour)
+    updateText(minutesElt, currentTime().minute)
+    updateText(secondsElt, currentTime().second)
+}
+
+/**
+ * Update clock
+ * 
+ * @param {HTMLSpanElement} elt
+ * @param {String} currentTime
+ * 
+ * @return {void}
+ */
+function updateText(elt, currentTime) {
     /**
      * For performance optimization update only if the value changes
      */
-    if (hoursElt.textContent != currentTime().hour) {
-        hoursElt.textContent = addZero(currentTime().hour)
-    }
-    
-    if (minutesElt.textContent != currentTime().minute) {
-        minutesElt.textContent = addZero(currentTime().minute)
-    }
-    
-    if (secondsElt.textContent != currentTime().second) {
-        secondsElt.textContent = addZero(currentTime().second)
+    if (elt.textContent != currentTime) {
+        elt.textContent = addZero(currentTime)
     }
 }
 
@@ -45,16 +51,16 @@ function analogClock() {
     const hoursElt = analogClock.querySelector('.hand.hour')
     const minutesElt = analogClock.querySelector('.hand.minute')
     const secondsElt = analogClock.querySelector('.hand.second')
-    
-    
+
+
     const secondsRatio = currentTime().second / 60
     const minutesRatio = (secondsRatio + currentTime().minute) / 60
     const hoursRatio = (minutesRatio + currentTime().hour) / 12
-    
+
     setRotation(secondsElt, secondsRatio)
     setRotation(minutesElt, minutesRatio)
     setRotation(hoursElt, hoursRatio)
-    
+
 }
 
 
@@ -73,11 +79,11 @@ function setRotation(elt, rotationRatio) {
  * Add zero for numbers smaller than 10
  * @param {String|Number} str
  * 
- * @return {Number} str
+ * @return {String} str
  */
 function addZero(str) {
     str = Number.parseInt(str)
-    return str < 10 ? '0' + str : str
+    return str < 10 ? ('0' + str).toString() : str.toString()
 }
 
 window.addEventListener('DOMContentLoaded', () => {

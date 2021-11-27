@@ -26,23 +26,20 @@ body {
     align-items: center;
 }
 
-#analog-clock *,
-#digital-clock * {
+#analog-clock .number *,
+#digital-clock time>* {
     font-family: Orbitron, Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
-#digital-clock * {
-    font-size: 4.5rem;
+#digital-clock {
+    font-size: 3.5rem;
 }
 
 #digital-clock {
     background-color: var(--clockBackground);
     height: 150px;
     width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 5px;
 }
 
@@ -57,12 +54,16 @@ body {
     border: 2px solid var(--danger);
 }
 
+h2 {
+    font-family: 'Grand Hotel', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
 #analog-clock h2 {
     position: absolute;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -20%);
-    font-family: 'Grand Hotel';
 }
 
 .number {

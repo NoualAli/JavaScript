@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CustomCss/css/reset.css">
+    <link rel="stylesheet" href="../../CustomCss/css/style.css">
+    <link rel="stylesheet" href="../../CustomCss/css/form.css">
+    <title>Learning Vue js</title>
+</head>
+<body>
+    <div id="app">
+        <h1 class="txt-center">{{ pageTitle }}</h1>
+        <div class="container">
+            <form id="createNames">
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" class="input" id="name" name="name" v-model="name">
+                </div>
+
+                <button class="button primary" @click="storeName">Create</button>
+            </form>
+
+            <h2>Liste of names</h2>
+            <ul class="list-card">
+                <li v-for="name in names" v-text="name" class="list-card-elt" @dblClick="deleteName"></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

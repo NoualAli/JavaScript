@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="../../../CustomCss/css/reset.css">
+    <link rel="stylesheet" href="../../../CustomCss/css/style.css">
+    <title>Exercice - Modal</title>
+</head>
+<body>
+    
+    <div id="app">
+        <div class="container">
+            <h1 class="title">Exercice - Modal</h1>
+            <modal v-if="showModal" @close="showModal = false">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolores quos rerum ipsam exercitationem, dolore optio velit ullam voluptatem minus obcaecati maiores totam! Deleniti ipsam error iusto, at a nobis?
+            </modal>
+            <button @click="showModal = true" class="button is-primary">Show modal</button>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

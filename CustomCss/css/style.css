@@ -362,3 +362,32 @@ a{
     color: var(--linkColor);
     cursor: pointer;
 }
+
+/*
+    List Card
+*/
+
+.list-card {
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+
+.list-card .list-card-elt{
+    background-color: var(--lightGrey);
+    padding: 15px 10px;
+    transition: .2s ease-in-out;
+}
+
+.list-card .list-card-elt:nth-child(odd){
+    background-color: var(--white);
+}
+
+.list-card .list-card-elt:hover{
+    background-color: var(--white);
+}
+
+.list-card .list-card-elt:nth-child(odd):hover{
+    background-color: var(--lightGrey);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <title>Pierre papier ciseaux</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="score">
+                <div class="user">
+                    <i class="fas fa-user"></i>
+                    <div class="number">0</div>
+                </div>
+            </div>
+            <div class="round">
+                <p>Round:
+                    <div class="number">0</div>
+                </p>
+            </div>
+            <div class="score">
+                <div class="pc">
+                    <i class="fas fa-desktop"></i>
+                    <div class="number">0</div>
+                </div>
+            </div>
+        </nav>
+        <div class="choices">
+            <div class="imageContainer" data-choice="rock"><i class="far fa-hand-rock"></i></div>
+            <div class="imageContainer" data-choice="paper"><i class="far fa-hand-paper"></i></div>
+            <div class="imageContainer" data-choice="scissors"><i class="far fa-hand-scissors"></i></div>
+        </div>
+    </div>
+    <div class="end-game-container hidden">
+        <div class="end-game-text">
+            <p></p>
+        </div>
+        <button>Refaire une partie</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
